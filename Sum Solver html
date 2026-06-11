@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum Solver</title>
+</head>
+<body>
+    <h2>Sum Solver</h2>
+    <input type="number" id="num1" placeholder="First Number">
+    <input type="number" id="num2" placeholder="Second Number">
+    <button onclick="solveSum()">Add</button>
+    <p id="result"></p>
+
+    <script>
+        function solveSum() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+            document.getElementById("result").innerText = "Sum = " + (a + b);
+        }
+    </script>
+</body>
+</html>
